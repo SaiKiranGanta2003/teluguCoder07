@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python-Day1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* background-color: #1e1e2e; */
+            color: white;
+            background: linear-gradient(175deg, #ffffff, #ec3ebb); 
+            background-attachment: fixed;
+        }
+        .container {
+            padding: 50px 15px;
+        }
+        .header {
+            padding: 15px 20px;
+            /* text-align: center; */
+            font-size: 24px;
+            font-weight: 600;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+            background: #333;
+            /* text-align: center; */
+            padding: 20px;
+            color: white;
+            position: relative;
+            margin-top: 30px;
+        }
+        .slide {
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+            background-color: white;
+            color: black;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+        li{
+            font-weight: 600;
+        }
+        /* .slide h3, .slide p, .slide ul, .slide ol {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+   
+            */
+            /* .slide:nth-child(1) { background: linear-gradient(135deg, #ff9a9e, #fad0c4); }
+        .slide:nth-child(2) { background: linear-gradient(135deg, #a18cd1, #fbc2eb); }
+        .slide:nth-child(3) { background: linear-gradient(135deg, #8EC5FC, #E0C3FC); }
+        .slide:nth-child(4) { background: linear-gradient(135deg, #FEE140, #FA709A); } */
+        /* .slide:nth-child(5) { background: linear-gradient(135deg, #76b852, #8DC26F); } */
+    </style>
+</head>
+<body>
+
+    <div class="header bg-primary">Python-Day1 🐍</div>
+
+    <div class="container">
+        <h1 class="text-center mb-4 text-dark" data-aos="fade-up">🚀 Introduction to Python & Installation 🐍</h1>
+        
+        <div class="slide" data-aos="fade-right">
+            <h3>What is Python? / పైథాన్ అంటే ఏమిటి?</h3>
+            <ul>
+                <li>Python is a high-level, interpreted programming language. / పైథాన్ ఒక హై-లెవెల్, ఇంటర్‌ప్రెటెడ్ ప్రోగ్రామింగ్ భాష.</li>
+                <li>It is beginner-friendly and has simple syntax. / ఇది కొత్తవారికి అనుకూలంగా ఉంటుంది మరియు సరళమైన సింటాక్స్ కలిగి ఉంటుంది.</li>
+                <li>Used in Web Development, Data Science, AI, and more. / వెబ్ డెవలప్‌మెంట్, డేటా సైన్స్, AI మరియు మరిన్ని విభాగాలలో ఉపయోగిస్తారు.</li>
+            </ul>
+        </div>
+
+        <div class="slide" data-aos="fade-left">
+            <h3>Real-World Applications / నిజజీవితంలో ఉపయోగాలు</h3>
+            <ul>
+                <li>🌐 Web Development – Django, Flask / వెబ్ డెవలప్‌మెంట్ – డీజాంగో, ఫ్లాస్క్</li>
+                <li>📊 Data Science – Pandas, NumPy / డేటా సైన్స్ – పాండాస్, నంపై</li>
+                <li>🤖 AI & Automation – TensorFlow, OpenCV / AI & ఆటోమేషన్ – టెన్సర్‌ఫ్లో, ఓపెన్‌సీవీ</li>
+                <li>🔒 Cybersecurity – Ethical Hacking / సైబర్‌ సెక్యూరిటీ – నైతిక హ్యాకింగ్</li>
+            </ul>
+        </div>
+
+        <div class="slide" data-aos="fade-right">
+            <h3>How to Install Python? / పైథాన్‌ను ఎలా ఇన్స్టాల్ చేయాలి?</h3>
+            <ol>
+                <li>Download Python from <a href="https://www.python.org/downloads/" target="_blank">python.org</a>. / పైథాన్‌ను <a href="https://www.python.org/downloads/" target="_blank">python.org</a> నుండి డౌన్‌లోడ్ చేయండి.</li>
+                <li>Run the installer and check "Add Python to PATH". / ఇన్‌స్టాలర్‌ను రన్ చేసి, "Add Python to PATH" ఎంపికను ఎనేబుల్ చేయండి.</li>
+                <li>Open CMD/Terminal and type <code>python --version</code> to verify. / కమాండ్ ప్రాంప్ట్/టెర్మినల్‌ను తెరిచి, <code>python --version</code> టైప్ చేసి వెరిఫై చేయండి.</li>
+            </ol>
+        </div>
+
+        <div class="slide" data-aos="fade-left">
+            <h3>Writing Your First Python Program / మీ మొదటి పైథాన్ ప్రోగ్రామ్ రాయడం</h3>
+            <pre><code>print("Welcome to Python Programming!")</code></pre>
+            <p>Save it as <code>first_program.py</code> and run using <code>python first_program.py</code>. / దీన్ని <code>first_program.py</code>గా సేవ్ చేసి, <code>python first_program.py</code> తో రన్ చేయండి.</p>
+        </div>
+
+    </div>
+
+    <div class="footer bg-primary">© 2025 telugucoder07. All rights reserved.</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
